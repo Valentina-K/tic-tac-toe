@@ -1,15 +1,80 @@
-@import-normalize; /* bring in normalize.css styles */
-
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 34px;
+  height: 5.5rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 5.5rem;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container{
+  padding: 0 1.5rem;
+}
+
+.game-board{
+  transform: translateY(30vh);
+}
+
+.modalTitle{
+  text-align: center;
+}
+
+.buttonBlock{
+  display: flex;
+  justify-content: center;
+}
+
+.initialPlay{
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.players{
+  display: flex;
+  justify-content: space-around;
+}
+
+.playerBlock{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
